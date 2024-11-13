@@ -15,7 +15,7 @@ The **Prompt Generator for AI Models** is a Python-based tool that helps users c
 - **Time-Saving**: Quickly generate detailed prompts, eliminating the need for manual brainstorming ⏳.
 - **Enhanced AI Outputs**: Well-structured prompts help generate better AI responses, improving creativity and context 🎯.
 - **Flexibility**: Supports multiple prompt types (Zero-Shot, One-Shot, Creative, etc.) for various applications 🔄.
-- **User-Friendly Interface**: Easy-to-use UI with a Jupyter Notebook or Google Colab interface, perfect for both technical and non-technical users 💻🖱️.
+- **User-Friendly Interface**: Now it is on Google collab. I'm gonna make the best interface for it Stay Updated💻🖱️.
 
 ---
 
