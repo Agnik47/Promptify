@@ -49,10 +49,11 @@ def generate_full_prompt(chat_session, user_input, prompt_type, word_count=None)
         - Be complete, without cutting sentences awkwardly.
         - Follow a clear and logical structure.
 
+
         Prompt Type: {prompt_type}
         User's Input: {user_input}
 
-        Please generate a complete prompt within {word_count or 'a reasonable'} word limit.
+        Please generate a complete prompt within {word_count or 'a reasonable'} word limit without cutting sentences awkwardly.
         """
 
         # Generate response using the chat session
@@ -88,7 +89,7 @@ def handle_prompt_generation(user_input, prompt_type, word_count=None):
     if word_count and word_count != 0:
         max_output_tokens = int(word_count * 1.5)
     else:
-        max_output_tokens = 200  # Default value
+        max_output_tokens = 300  # Default value
 
     generation_config = get_generation_config(
         temperature=0.9,
@@ -166,7 +167,7 @@ def generate_ui():
 
     generate_button.on_click(on_button_click)
 
-    # Display widgets
+    # Display ui
     display(user_input_box, prompt_type_dropdown, word_count_box, generate_button, output_area)
 
 # Call 
